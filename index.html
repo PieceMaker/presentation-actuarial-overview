@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <!--Slide 1-->
+        <section>
+            <h3>Actuaries: An Overview</h3>
+            <h5>Jonathan Adams</h5>
+            <p>February 3rd, 2016</p>
+        </section>
+
+        <!--Slide 2-->
+        <section>
+            <img src="http://imgs.xkcd.com/comics/actuarial.png">
+        </section>
+
+        <!--Slide 3-->
+        <section>
+            <h3>What Do Actuaries Do?</h3>
+            <ul>
+                <li>
+                    Combine economics, finance, and statistics (to name a few)
+                    <ul>
+                        <li>Ratemaking</li>
+                        <li>Investing</li>
+                        <li>Loss Reserving</li>
+                        <li>Catastrophe Modeling</li>
+                    </ul>
+                </li>
+                <li>Need to be a "jack-of-all-trades."</li>
+            </ul>
+        </section>
+
+        <!--Slide 4-->
+        <section>
+            <h3>Ratemaking</h3>
+            <ul>
+                <li>
+                    Estimate future losses
+                    <ul>
+                        <li>Explore large datasets</li>
+                        <li>Apply personal knowledge</li>
+                        <li>
+                            Fit models
+                            <ul>
+                                <li>Regression</li>
+                                <li>Statistical distribution</li>
+                                <li>Time series</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Prevent insolvency</li>
+                <li>Provide a profit</li>
+                <li>
+                    Do not overcharge
+                    <ul>
+                        <li>Similar to "do no harm"</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!--Slide 5-->
+        <section>
+            <h3>Investing & Loss Reserving</h3>
+            <ul>
+                <li>Collect premiums at beginning of "year"</li>
+                <li>
+                    Money should be invested
+                    <ul>
+                        <li>Time value of money</li>
+                        <li>Rates of return</li>
+                        <li>Financial products</li>
+                    </ul>
+                </li>
+                <li>
+                    Need to estimate losses
+                    <ul>
+                        <li>Loss reserving</li>
+                        <li>IBNR</li>
+                        <li>Chain Ladder</li>
+                        <li>Can span several years</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!--Slide 6-->
+        <section>
+            <h3>Catastrophe (CAT) Modeling</h3>
+
+            <!--Slide 6.1-->
+            <section>
+                <img src="./images/cuteCat.jpg">
+            </section>
+
+            <!--Slide 6.2-->
+            <section>
+                <ul>
+                    <li>
+                        What could happen?
+                        <ul>
+                            <li>What is probability of it happening?</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Account for existing correlations and simulate 10,000 years of data
+                    </li>
+                    <li>
+                        Copulas are powerful tool
+                        <ul>
+                            Simultaneously account for marginal distributions and correlation structure
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://freakonometrics.hypotheses.org/17113">http://freakonometrics.hypotheses.org/17113</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Slide 6.3-->
+            <section>
+                <figure>
+                    <img src="./images/copulas.png">
+                    <figcaption>Sample Copulas</figcaption>
+                </figure>
+            </section>
+
+            <!--Slide 6.4-->
+            <section>
+                <figure>
+                    <img src="./images/marginals.png">
+                    <figcaption>Example Marginals</figcaption>
+                </figure>
+            </section>
+
+            <!--Slide 6.5-->
+            <section>
+                <figure>
+                    <img src="./images/transformedCopulaSample.png">
+                    <figcaption>Clayton Copula Sample</figcaption>
+                </figure>
+            </section>
+
+            <!--Slide 6.6-->
+            <section>
+                <figure>
+                    <img src="./images/lossCurves.png">
+                    <figcaption>Sample Loss Curves</figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <!--Slide 7-->
+        <section>
+            <h3>How to Prepare</h3>
+
+            <!--Slide 7.1-->
+            <section>
+                <ul>
+                    <li>
+                        Learn to program
+                        <ul>
+                            <li>R</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Javascript</li>
+                            <li>Cloud Computing (AWS/Azure)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Slide 7.2-->
+            <section>
+                <ul>
+                    <li>
+                        Learn how to apply statistics
+                        <ul>
+                            <li>
+                                <a href="http://r-bloggers.com/">R-Bloggers.com</a>
+                            </li>
+                            <li>
+                                <a href="http://freakonometrics.hypotheses.org/">freakonometrics.hypotheses.org</a>
+                            </li>
+                            <li>Computational Actuarial Science with R</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Slide 7.3-->
+            <section>
+                <ul>
+                    <li>
+                        Pass exams
+                        <ul>
+                            <li>
+                                <a href="http://www.beanactuary.org/">BeAnActuary.org</a>
+                            </li>
+                            <li>
+                                <a href="http://www.actuarialoutpost.com/">ActuarialOutpost.com</a>
+                            </li>
+                            <li>Internships</li>
+                            <li>Problems!</li>
+                            <li>Problems!!</li>
+                            <li>Problems!!!</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!--Slide 8-->
+        <section>
+            <h3>Questions?</h3>
+
+            <!--Add question meme here-->
+        </section>
+    </div>
+</div>
+<script src="node_modules/reveal.js/js/reveal.js"></script>
+<script>
+    Reveal.initialize();
+</script>
+</body>
+</html>
